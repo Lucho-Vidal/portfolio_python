@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% block title %} Bienvenido {% endblock %} {% block content %}
+<div class="hero">
+    <div class="hero-content">
+        <div class="left">
+            <h1>Soy desarrollador</h1>
+            <h1>Luciano Vidal</h1>
+            <p>Construyo aplicaciones en Python dinámicas utilizando base de datos relacionales. </p>
+            <p>Además, me desempeño como supervisor de personal en una importante empresa argentina con más de 200 personas a cargo por cada turno. </p>
+
+
+            <a href="#contacto" class="btn">Contáctame</a>
+        </div>
+        <div class="right">
+            <img src="{{url_for('static',filename='big-data.png')}} " width="600px" />
+        </div>
+    </div>
+</div>
+{% include 'portfolio/section-first.html' %} {% include 'portfolio/section-second.html' %}{% include 'portfolio/section-third.html' %} {% endblock %}
