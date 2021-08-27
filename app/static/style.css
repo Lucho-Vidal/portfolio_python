@@ -102,12 +102,14 @@ html body nav li a {
 }
 
 .left {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     align-self: center;
 }
 
 .right {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     /* align-self: center; */
 }
 
@@ -142,6 +144,9 @@ a.btn {
     .row {
         flex-direction: column;
     }
+    .right .padded{
+        padding: 20px 100px;
+    }
 }
 
 .orange {
@@ -158,10 +163,15 @@ a.btn {
 
 .card {
     background-color: #fff;
-    box-shadow: 0 1px 2px #ddd;
+    box-shadow: 0 5px 12px #ddd;
     border: solid 1px #ddd;
     border-radius: 5px;
     padding: 20px 30px;
+    transition: 0.5s;
+}
+
+.card:hover{
+    box-shadow: 0 1px 5px #ddd;
 }
 
 .third {
@@ -177,6 +187,7 @@ a.btn {
     margin-bottom: 15px;
     border-radius: 5px;
     width: calc(100% - 20px);
+    box-shadow: 6px 6px 10px 7px #ddd;
 }
 
 .contact-form textarea {
@@ -187,8 +198,18 @@ a.btn {
     resize: none;
     border-radius: 5px;
     width: calc(100% - 20px);
+    box-shadow: 6px 6px 10px 7px #ddd;
 }
 
+#contacto button{
+    margin-top:20px;
+    box-shadow: 6px 6px 10px 7px #ddd;
+}
+
+#contacto button:hover{
+    background-color: #dd4504;
+    
+}
 .full-width {
     width: 100%;
 }
