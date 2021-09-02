@@ -85,7 +85,6 @@ html body nav li a {
 .hero .hero-content .right img {
     width: 100%;
     max-width: 600px;
-    
 }
 
 .hero h1 {
@@ -98,7 +97,11 @@ html body nav li a {
 
 .hero p {
     font-family: 'Rubik', sans-serif;
-    margin-bottom: 20px;
+    /* padding-bottom: 60px; */
+}
+
+.hero p::before {
+    margin-bottom: 60px;
 }
 
 .left {
@@ -123,7 +126,8 @@ html body nav li a {
 
 a.btn {
     color: #fff;
-    margin-top: 50px;
+    margin-top: 30px;
+    position: absolute;
 }
 
 .center {
@@ -144,7 +148,7 @@ a.btn {
     .row {
         flex-direction: column;
     }
-    .right .padded{
+    .right .padded {
         padding: 20px 100px;
     }
 }
@@ -170,7 +174,7 @@ a.btn {
     transition: 0.5s;
 }
 
-.card:hover{
+.card:hover {
     box-shadow: 0 1px 5px #ddd;
 }
 
@@ -201,15 +205,15 @@ a.btn {
     box-shadow: 6px 6px 10px 7px #ddd;
 }
 
-#contacto button{
-    margin-top:20px;
+#contacto button {
+    margin-top: 20px;
     box-shadow: 6px 6px 10px 7px #ddd;
 }
 
-#contacto button:hover{
+#contacto button:hover {
     background-color: #dd4504;
-    
 }
+
 .full-width {
     width: 100%;
 }
