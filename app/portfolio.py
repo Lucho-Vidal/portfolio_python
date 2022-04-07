@@ -1,3 +1,4 @@
+# from crypt import methods
 from flask import(
     Blueprint, render_template, request, redirect, url_for, current_app
 )
@@ -21,6 +22,7 @@ def mail():
         return render_template('portfolio/sent_mail.html')
 
     return redirect(url_for('portfolio.index'))
+
 
 def send_mail(name,email,message):
     
